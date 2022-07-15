@@ -1,0 +1,35 @@
+<style>
+    .header {
+        /* position: relative; */
+        background-color: #00425B;
+        color: white;
+        height: 70px;
+        padding: 15px 0;
+    }
+
+    .header .nav-link {
+        color: white;
+    }
+</style>
+
+<!-- Header starts -->
+<nav class="navbar navbar-expand-lg header">
+    <a class="navbar-brand mx-5" href="{% url 'home:index' %}" style="color: white;">QuizWebAPP</a>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav mx-4">
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="{% url 'home:index' %}">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="{% url 'quizes:index' %}">Quizes</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="{% url 'teachers:index' %}">Teachers</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="{% url 'students:index' %}">Students</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Header ends -->
