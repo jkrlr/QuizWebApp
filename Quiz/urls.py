@@ -23,8 +23,8 @@ urlpatterns = [
     path('', include('home.urls')),
     path('accounts/', include('accounts.urls')),
     path('quizes/', include('apps.quizes.urls')),
-    path('teachers/', include('apps.teachers.urls')),
-    path('students/', include('apps.students.urls')),
+    # path('teachers/', include('apps.teachers.urls')),
+    # path('students/', include('apps.students.urls')),
 ]
 
 if settings.DEBUG:
